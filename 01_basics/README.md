@@ -70,3 +70,5 @@ console.log(x);<br>
 // デクリメント<br>
 x--;<br>
 console.log(x);<br>
+<br>
+---
