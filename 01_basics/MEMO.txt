@@ -1,2 +1,12 @@
 10/05(Mon)-01
 https://takagi-trident.notion.site/2026-js-basics01
+
+01. console.log
+コンソール画面にデータやメッセージを出力する命令
+例:console.log('js!, 123, あいうえお')
+
+console.warn('warn');
+注意、警告メッセージ
+
+console.error('error');
+エラーメッセージ
