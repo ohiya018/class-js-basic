@@ -49,7 +49,7 @@ Webフロントエンド開発の土台となる **Vanilla JavaScript（ピュ�
 
 1. 本リポジトリを Fork してローカル環境にクローンします。
    ```bash
-   git clone https://github.com/<YOUR_ACCOUNT>/class-js-basic.git
+   git clone https://github.com/ohiya018/class-js-basic.git
    ```
 2. 対象課題のディレクトリを開き、`index.html` をブラウザで確認しながら実装します。
 
