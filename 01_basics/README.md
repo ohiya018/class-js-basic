@@ -49,7 +49,6 @@ const→値が変わらないもの(基本これ)、let→後から中身を上�
 確認テストで'undefined'出る
 <br>
 ---
-<br>
 演算子
 <br>
 console.log(6 + 9); //加法<br>
