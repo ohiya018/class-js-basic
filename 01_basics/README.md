@@ -13,3 +13,10 @@ console.warn('warn');
 
 console.error('error');
 エラーメッセージ
+
+console.table(['apple', 'banana']);
+テーブル形式で出力
+↓みたいな感じにコンソールに表示
+index   value
+0       'apple'
+1       'banana'
