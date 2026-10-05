@@ -20,3 +20,8 @@ console.table(['apple', 'banana']);
 index   value
 0       'apple'
 1       'banana'
+
+// 1行コメント
+/*
+複数行コメント
+*/
