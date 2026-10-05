@@ -32,7 +32,6 @@ index   value<br>
 */
 <br>
 ---
-<br>
 変数
 <br>
 const name = 'imaizumi'; // 変数を宣言<br>
@@ -63,4 +62,12 @@ console.log(3 ** 2); //累乗<br>
 自己代入演算子<br>
 x = 2;<br>
 x += 100;<br>
+console.log(x);<br>
+
+//インクリメント<br>
+x++;<br>
+console.log(x);<br>
+<br>
+// デクリメント<br>
+x--;<br>
 console.log(x);<br>
