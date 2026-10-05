@@ -4,10 +4,10 @@
 
 10/05(Mon)1限
 <br>
-01.console.log
-コンソール画面にデータやメッセージを出力する命令
+01.console.log<br>
+コンソール画面にデータやメッセージを出力する命令<br>
 例:console.log('js!, 123, あいうえお')
-
+---
 console.warn('warn');
 注意、警告メッセージ
 
