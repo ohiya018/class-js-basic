@@ -33,4 +33,12 @@ index   value<br>
 変数
 <br>
 const name = 'imaizumi'; // 変数を宣言<br>
-console.log(name); // 変数の確認
+console.log(name); // 変数の確認<br>
+※const name;だけでは値がないためエラーになる<br>
+<br>
+let name;<br>
+※constとは違い箱だけの宣言はできる、その場合後から入れる変数名を書かないといけない<br>
+name = 'imaizumi';<br>
+<br>
+使い分け<br>
+const→値が変わらないもの(基本これ)、let→後から中身を上書き・変更するもの
