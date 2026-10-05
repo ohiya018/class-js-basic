@@ -16,13 +16,14 @@ console.error('error');
 エラーメッセージ
 
 console.table(['apple', 'banana']);
-テーブル形式で出力
+テーブル形式で出力<br>
 ↓みたいな感じにコンソールに表示
-index   value
-0       'apple'
+index   value<br>
+0       'apple'<br>
 1       'banana'
-
+<br>
 // 1行コメント
+<br>
 /*
 複数行コメント
 */
