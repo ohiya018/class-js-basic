@@ -8,7 +8,9 @@
 01.console.log<br>
 コンソール画面にデータやメッセージを出力する命令<br>
 例:console.log('js!, 123, あいうえお')
+<br>
 ---
+<br>
 console.warn('warn');
 注意、警告メッセージ
 
@@ -29,6 +31,7 @@ index   value<br>
 複数行コメント
 */
 <br>
+---
 <br>
 変数
 <br>
@@ -38,7 +41,26 @@ console.log(name); // 変数の確認<br>
 <br>
 let name;<br>
 ※constとは違い箱だけの宣言はできる、その場合後から入れる変数名を書かないといけない<br>
+別例:
 name = 'imaizumi';<br>
 <br>
 使い分け<br>
-const→値が変わらないもの(基本これ)、let→後から中身を上書き・変更するもの
+const→値が変わらないもの(基本これ)、let→後から中身を上書き・変更するもの<br>
+<br>
+確認テストで'undefined'出る
+<br>
+---
+<br>
+演算子
+<br>
+console.log(6 + 9); //加法<br>
+console.log(10 - 15); //減法<br>
+console.log(3 * 7); //乗法<br>
+console.log(10 / 5); //除法<br>
+console.log(7 % 3); //剰余<br>
+console.log(3 ** 2); //累乗<br>
+
+自己代入演算子<br>
+x = 2;<br>
+x += 100;<br>
+console.log(x);<br>
