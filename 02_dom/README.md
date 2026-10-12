@@ -2,7 +2,14 @@
 
 このフォルダには「02_DOMの取得と要素の書き換え」の授業用練習コードおよび課題データを保存します。
 ---
-## 開発準備.
+## 今回のゴール
+1. **`document.getElementById()`** と **`document.querySelector()`** を使い分け、狙ったHTML要素を正確に取得できる。
+2. **DOM（Document Object Model）** の仕組みを理解し、HTMLとJavaScriptがつながる構造をイメージできる。
+3. **`textContent`** と **`innerHTML`** の違いを理解し、要素内のテキストやHTMLタグ構造を書き換えられる。
+4. **`element.style`** を使って、CSSプロパティ（文字色や背景色など）を動的に変更できる。
+5. **`addEventListener()`** を使って、ボタンクリックに合わせてテキストやスタイルが変化するページを作成できる。
+---
+## 開発準備
 index.htmlの<title>の下に.
 <script defer src="js/main.js"></script>書く.
 **【重要】defer の役割**.
@@ -15,7 +22,7 @@ HTMLファイルは上から下に向かって順番に読み込まれます.
 
 **`defer`** 属性を付けておくと、**「HTMLの構造を最後まで全部読み込んでから、安全にJavaScriptを実行してね」** という合図になります。現代のWeb制作における重要ルールです.
 ---
-## 要素の取得.
+## 要素の取得
 ・document.getElementById()
 
 
