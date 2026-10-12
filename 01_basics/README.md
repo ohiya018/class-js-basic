@@ -20,55 +20,42 @@ console.error('error');
 console.table(['apple', 'banana']);
 テーブル形式で出力<br>
 ↓みたいな感じにコンソールに表示<br>
-index   value<br>
-0       'apple'<br>
-1       'banana'
-<br>
-<br>
-// 1行コメント
-<br>
-/*
-複数行コメント
-*/
-<br>
+index   value.
+0       'apple'.
+1       'banana'.
+// 1行コメント.
+/*.
+複数行コメント.
+*/.
 ---
-変数
-<br>
-const name = 'imaizumi'; // 変数を宣言<br>
-console.log(name); // 変数の確認<br>
-※const name;だけでは値がないためエラーになる<br>
-<br>
-let name;<br>
-※constとは違い箱だけの宣言はできる、その場合後から入れる変数名を書かないといけない<br>
+変数.
+const name = 'imaizumi'; // 変数を宣言.
+console.log(name); // 変数の確認.
+※const name;だけでは値がないためエラーになる.
+let name;
+※constとは違い箱だけの宣言はできる、その場合後から入れる変数名を書かないといけない.
 別例:
-name = 'imaizumi';<br>
-<br>
-使い分け<br>
-const→値が変わらないもの(基本これ)、let→後から中身を上書き・変更するもの<br>
-<br>
-確認テストで'undefined'出る
-<br>
+name = 'imaizumi';
+使い分け.
+const→値が変わらないもの(基本これ)、let→後から中身を上書き・変更するもの.
+確認テストで'undefined'出る.
 ---
-演算子
-<br>
-console.log(6 + 9); //加法<br>
-console.log(10 - 15); //減法<br>
-console.log(3 * 7); //乗法<br>
-console.log(10 / 5); //除法<br>
-console.log(7 % 3); //剰余<br>
-console.log(3 ** 2); //累乗<br>
-
-自己代入演算子<br>
+演算子.
+console.log(6 + 9); //加法.
+console.log(10 - 15); //減法.
+console.log(3 * 7); //乗法.
+console.log(10 / 5); //除法.
+console.log(7 % 3); //剰余.
+console.log(3 ** 2); //累乗.
+自己代入演算子.
 x = 2;<br>
 x += 100;<br>
 console.log(x);<br>
-
-//インクリメント<br>
+//インクリメント.
 x++;<br>
 console.log(x);<br>
 <br>
-// デクリメント<br>
+// デクリメント.
 x--;<br>
 console.log(x);<br>
-<br>
 ---
