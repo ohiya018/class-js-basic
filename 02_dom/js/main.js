@@ -42,3 +42,16 @@ intro.innerHTML = `途中で<br>改行がある文章です。`;
 
 const changeBtn = document.getElementById('change-btn');
 changeBtn.innerHTML = `<strong>内容を変更する</strong>`;
+
+
+mainTitle.style.color = '#ff3366';
+mainTitle.style.backgroundColor = `#333333`;
+
+let newSize = 50;
+mainTitle.style.fontSize = `${newSize}px`;
+
+changeBtn.addEventListener('click', () => {
+    intro.style.color = `#ff0000`;
+    intro.style.fontSize = `100px`;
+    intro.style.backgroundColor = `#00bbff`;
+});
