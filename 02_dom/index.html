@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>02_DOMの取得と要素の書き換え</title>
-    <script src="./js/main.js" defer></script>
+    <title>02_課題「テーマスイッチャー」</title>
+    <script defer src="js/main.js"></script>
 </head>
+
 <body>
-    <h1 id="main-title">JavaScriptで画面を動かそう</h1>
-    <p id="intro">この文章はJavaScriptによって書き換えられます。</p>
-    <button id="change-btn">内容を変更する</button>
+    <h1 id="theme-title">今のテーマ：ライトモード</h1>
+    <p id="theme-desc">下のボタンを押して、好きなテーマに切り替えてみてください。</p>
+
+    <div class="btn-group">
+        <button id="btn-light">☀️ ライト</button>
+        <button id="btn-dark">🌙 ダーク</button>
+        <button id="btn-autumn">自由に設定</button>
+    </div>
 </body>
+
 </html>
