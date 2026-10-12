@@ -71,6 +71,8 @@ const changeBtnLight = document.getElementById('btn-light');
 const changeBtnDark = document.getElementById('btn-dark');
 const changeBtnAutumn = document.getElementById('btn-autumn');
 
+
+//3,4
 changeBtnLight.addEventListener('click', () => {
     mainTitle.textContent = '今のテーマ：☀️ ライトモード';
     body.style.color = '#333333';
