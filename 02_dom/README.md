@@ -10,8 +10,7 @@
 5. **`addEventListener()`** を使って、ボタンクリックに合わせてテキストやスタイルが変化するページを作成できる。
 ---
 ## 開発準備
-index.htmlの<title>の下に.
-<script defer src="js/main.js"></script>書く.
+index.htmlの<title>の下に<script defer src="js/main.js"></script>書く.
 **【重要】defer の役割**.
 
 HTMLファイルは上から下に向かって順番に読み込まれます.
