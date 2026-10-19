@@ -24,6 +24,11 @@ window.addEventListener('scroll', () => {
     document.body.style.backgroundImage = `linear-gradient(${window.scrollY}deg, #ff9a9e, #fad0c4)`;
 });
 
+/*
+window.addEventListener('DOMContentLoaded', () => { });
+DOMツリーが完成したら実行する(ブラウザにはまだ表示されてない)
+*/
+
 window.addEventListener('load', () => {
     btn.style.transform = `rotate(${window.scrollY}deg)`;
     document.body.style.backgroundImage = `linear-gradient(${window.scrollY}deg, #ff9a9e, #fad0c4)`;
@@ -40,4 +45,12 @@ windowHeight.textContent = window.innerHeight;
 window.addEventListener('resize', () => {
     windowWidth.textContent = window.innerWidth;
     windowHeight.textContent = window.innerHeight;
+});
+
+// 画面を開いた瞬間の文字サイズを設定（画面幅の1/25）
+mainTitle.style.fontSize = `${window.innerWidth / 25}px`;
+
+// リサイズされるたびに文字サイズを更新
+window.addEventListener('resize', () => {
+    mainTitle.style.fontSize = `${window.innerWidth / 25}px`;
 });

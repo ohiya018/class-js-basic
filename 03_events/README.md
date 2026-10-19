@@ -10,6 +10,7 @@
 >JavaScriptに「〜したときに、この処理を実行してね」と教え込む命令を イベントリスナー（addEventListener） と呼びます。
 
 ↓↓↓前回の復習コード↓↓↓
+
 const btn = document.getElementById('btn');
 const mainTitle = document.querySelector('#main-title');
 
@@ -41,3 +42,13 @@ window.addEventListener('load', () => {
 });
 
 ### 4. ウィンドウサイズを監視する：リサイズイベント(resize)
+
+>もう1つの重要な全体イベントが、ブラウザのウィンドウサイズが変更された瞬間に発生する 'resize' イベント です。
+
+>**【現在のウィンドウ幅の取得：`window.innerWidth` 】**
+
+現在開いているブラウザの内側の横幅（ピクセル数）は、**`window.innerWidth`** で取得できます。
+
+window.addEventListener('resize', () => {
+  console.log(`現在のブラウザ幅: ${window.innerWidth}px`);
+});
