@@ -52,3 +52,8 @@ window.addEventListener('load', () => {
 window.addEventListener('resize', () => {
   console.log(`現在のブラウザ幅: ${window.innerWidth}px`);
 });
+
+## クラス名の操作
+>ここまで、`element.style` を使って文字色や背景色、回転などをJavaScriptから直接書き換えてきました。
+
+しかし、実際のWeb制作現場では**「あらかじめCSSにクラスを定義しておき、JavaScriptからはそのクラスを付け外しする」** という手法が標準として使われます。
