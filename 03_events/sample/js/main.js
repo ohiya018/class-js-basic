@@ -54,3 +54,15 @@ mainTitle.style.fontSize = `${window.innerWidth / 25}px`;
 window.addEventListener('resize', () => {
     mainTitle.style.fontSize = `${window.innerWidth / 25}px`;
 });
+
+btn.classList.add('is-active', 'is-open');
+btn.classList.remove('is-active');
+
+btn.addEventListener('click', () => {
+    btn.classList.toggle('is-active');
+    if (btn.classList.contains('is-active')) {
+        btn.textContent = 'アクティブ';
+    } else {
+        btn.textContent = '通常';
+    }
+});

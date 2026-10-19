@@ -29,3 +29,8 @@ body {
 .btn:hover {
     opacity: 0.8;
 }
+
+.btn.is-active {
+    background-color: #06c;
+    color: #fff;
+}
