@@ -23,11 +23,11 @@ btn.addEventListener('click', () => {
 
 >イベントはボタンなどの特定のHTML要素だけでなく、**ブラウザのウィンドウ全体（`window`）** に対しても設定できます。
 
-その代表例が、ページがスクロールされた瞬間を監視する **`'scroll'` イベント** です。
+>その代表例が、ページがスクロールされた瞬間を監視する **`'scroll'` イベント** です。
 
 >**【スクロール量の取得：`window.scrollY` 】**
 
-現在ページが上から何ピクセルスクロールされているかは、**`window.scrollY`** という値で取得できます。
+>現在ページが上から何ピクセルスクロールされているかは、**`window.scrollY`** という値で取得できます。
 
 window.addEventListener('scroll', () => {
   console.log(`現在のスクロール量: ${window.scrollY}px`);
@@ -47,7 +47,7 @@ window.addEventListener('load', () => {
 
 >**【現在のウィンドウ幅の取得：`window.innerWidth` 】**
 
-現在開いているブラウザの内側の横幅（ピクセル数）は、**`window.innerWidth`** で取得できます。
+>現在開いているブラウザの内側の横幅（ピクセル数）は、**`window.innerWidth`** で取得できます。
 
 window.addEventListener('resize', () => {
   console.log(`現在のブラウザ幅: ${window.innerWidth}px`);
@@ -56,4 +56,4 @@ window.addEventListener('resize', () => {
 ## クラス名の操作
 >ここまで、`element.style` を使って文字色や背景色、回転などをJavaScriptから直接書き換えてきました。
 
-しかし、実際のWeb制作現場では**「あらかじめCSSにクラスを定義しておき、JavaScriptからはそのクラスを付け外しする」** という手法が標準として使われます。
+>しかし、実際のWeb制作現場では**「あらかじめCSSにクラスを定義しておき、JavaScriptからはそのクラスを付け外しする」** という手法が標準として使われます。
