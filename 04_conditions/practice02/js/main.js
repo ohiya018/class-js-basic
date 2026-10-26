@@ -56,3 +56,9 @@ togglePasswordBtn.addEventListener('click', () => {
         togglePasswordBtn.classList.remove('is-active');
     }
 });
+
+const commentInput = document.getElementById('comment-input');
+
+commentInput.addEventListener('input', () => {
+    console.log(`現在の入力文字数: ${commentInput.value.length}文字`);
+});
