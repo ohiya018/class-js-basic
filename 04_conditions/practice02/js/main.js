@@ -21,27 +21,21 @@ if (age >= 18 && hasLicense) {
 
 
 const btn = document.getElementById('btn');
-const countDisplay = document.getElementById('count');
 const message = document.getElementById('message');
 
-let count = 0;
-
-message.textContent = 'ボタンをクリックしてカウントを増やそう！';
-
 btn.addEventListener('click', () => {
+    const isMember = true; // 会員フラグ：true または false
+    const total = 1000; // 購入金額：数値
 
-    count++;
-    countDisplay.textContent = count;
-
-    if (count >= 30) {
-        message.textContent = '30回達成！ゲームクリアです！';
-        message.style.color = '#e74c3c';
-    } else if (count % 10 === 0) {
-        message.textContent = `${count}回達成！あと少し！`;
+    if (isMember && total >= 10000) {
+        message.textContent = '【送料無料＋20%OFF】プレミアム会員特典が適用されました！';
         message.style.color = '#0066cc';
+    } else if (isMember && total >= 5000) {
+        message.textContent = '【送料無料】会員特別割引が適用されました！';
+        message.style.color = '#27ae60';
     } else {
-        message.textContent = 'ボタンをクリックしてカウントを増やそう！';
-        message.style.color = '#333333';
+        message.textContent = '通常送料がかかります（会員登録＋5,000円以上で送料無料）。';
+        message.style.color = '#e74c3c';
     }
 
 });
