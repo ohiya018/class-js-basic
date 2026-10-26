@@ -47,12 +47,20 @@ btn.addEventListener('click', () => {
 
 });
 
-const top = document.getElementById('page-top');
+const pageTop = document.getElementById('page-top');
 
 window.addEventListener('scroll', () => {
     if (window.scrollY >= 300) {
-        top.classList.add('is-active');
+        pageTop.classList.add('is-active');
     } else {
-        top.classList.remove('is-active');
+        pageTop.classList.remove('is-active');
     }
+});
+
+// （おまけ）ボタンをクリックしたらスムーズに一番上へ戻る
+pageTop.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
 });
