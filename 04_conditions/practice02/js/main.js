@@ -1,41 +1,58 @@
-console.log('04_conditions ready!');
+const link = document.getElementById('external-link');
+const url = link.getAttribute('href');
+console.log(url);
 
-const score = `80`;
-if (score === 80) {
-    console.log('合格');
-} else if (score >= 50) {
-    console.log('もう少し');
-} else {
-    console.log('不合格');
-}
+//属性を変更する
+link.setAttribute('href', 'http://yahoo.co.jp');
 
-const age = 22;
-const hasLicense = true;
-
-// 18歳以上、かつ運転免許を持っているか?
-if (age >= 18 && hasLicense) {
-    console.log(`運転できる`);
-} else {
-    console.log('運転できない');
+//属性を消す
+const postBtn = document.getElementById('post-btn');
+postBtn.removeAttribute('disabled');
+if (!postBtn.hasAttribute('disabled')) {
+    console.log(`有効化中`);
 }
 
 
-const btn = document.getElementById('btn');
-const message = document.getElementById('message');
+const viewImg = document.getElementById('view-img');
+const toggleImgBtn = document.getElementById('toggle-img-btn');
 
-btn.addEventListener('click', () => {
-    const isMember = true; // 会員フラグ：true または false
-    const total = 1000; // 購入金額：数値
+const DAY_IMG = 'https://picsum.photos/id/1015/500/300';
+const NIGHT_IMG = 'https://picsum.photos/id/1040/500/300';
 
-    if (isMember && total >= 10000) {
-        message.textContent = '【送料無料＋20%OFF】プレミアム会員特典が適用されました！';
-        message.style.color = '#0066cc';
-    } else if (isMember && total >= 5000) {
-        message.textContent = '【送料無料】会員特別割引が適用されました！';
-        message.style.color = '#27ae60';
+toggleImgBtn.addEventListener('click', () => {
+    const currentSrc = viewImg.getAttribute('src');
+
+    if (currentSrc === DAY_IMG) {
+        viewImg.setAttribute('src', NIGHT_IMG);
+        viewImg.setAttribute('alt', `夜の画像`);
     } else {
-        message.textContent = '通常送料がかかります（会員登録＋5,000円以上で送料無料）。';
-        message.style.color = '#e74c3c';
+        viewImg.setAttribute('src', DAY_IMG);
+        viewImg.setAttribute('alt', `昼の画像`);
     }
+});
 
+const switchSiteBtn = document.getElementById('switch-site-btn');
+
+switchSiteBtn.addEventListener('click', () => {
+    link.setAttribute('href', 'https://computer.trident.ac.jp/');
+    link.textContent = 'トライデント公式サイトを開く';
+    switchSiteBtn.removeAttribute('target');
+    switchSiteBtn.textContent = '切り替え完了！';
+    switchSiteBtn.setAttribute('disabled', 'true');
+});
+
+const passwordInput = document.getElementById('password-input');
+const togglePasswordBtn = document.getElementById('toggle-password-btn');
+
+togglePasswordBtn.addEventListener('click', () => {
+    const currentType = passwordInput.getAttribute('type');
+    if (currentType === 'password') {
+        passwordInput.setAttribute('type', 'text');
+        togglePasswordBtn.textContent = '非表示';
+        togglePasswordBtn.classList.add('is-active');
+    } else {
+        passwordInput.setAttribute('type', 'password');
+        togglePasswordBtn.textContent = '表示';
+        togglePasswordBtn.classList.remove('is-active');
+    }
 });
