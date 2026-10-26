@@ -1,5 +1,3 @@
-const { isValidElement } = require("react");
-
 console.log('04_conditions ready!');
 
 const score = `80`;
@@ -27,12 +25,12 @@ const message = document.getElementById('message');
 
 btn.addEventListener('click', () => {
     const isMember = true; // 会員フラグ：true または false
-    const total = 6000; // 購入金額：数値
+    const total = 1000; // 購入金額：数値
 
-    if (isMember === true && total >= 10000) {
+    if (isMember && total >= 10000) {
         message.textContent = '【送料無料＋20%OFF】プレミアム会員特典が適用されました！';
         message.style.color = '#0066cc';
-    } else if (isMember === true && total >= 5000) {
+    } else if (isMember && total >= 5000) {
         message.textContent = '【送料無料】会員特別割引が適用されました！';
         message.style.color = '#27ae60';
     } else {
