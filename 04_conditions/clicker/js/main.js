@@ -1,5 +1,5 @@
 const MAX_HP = 100;
-const DAMAGE = 25;
+const DAMAGE = 40;
 
 let currentHP = MAX_HP;
 
@@ -14,6 +14,12 @@ const resetBtn = document.getElementById('reset-btn');
 
 attackBtn.addEventListener('click', () => {
     currentHP -= DAMAGE;
+
+    //ダメージ量が割り切れなくてもマイナスにしない処理
+    if (currentHP < 0) {
+        currentHP = 0;
+    }
+
     hpText.textContent = `HP: ${currentHP} / 100`;
     battleMessegeText.textContent = '効果的なダメージを与えた！';
     battleMessegeText.style.color = '#333333';
