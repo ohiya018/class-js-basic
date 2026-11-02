@@ -16,15 +16,19 @@ attackBtn.addEventListener('click', () => {
     currentHP -= DAMAGE;
     hpText.textContent = `HP: ${currentHP} / 100`;
     battleMessegeText.textContent = '効果的なダメージを与えた！';
+    battleMessegeText.style.color = '#333333';
     if (currentHP === 0) {
         battleMessegeText.textContent = 'モンスターをたおした！ゲームクリア！';
         attackBtn.setAttribute('disabled', 'true');
         EnemyImg.setAttribute('src', AFTER_IMG);
         EnemyImg.setAttribute('alt', `倒れたモンスター`);
+        battleMessegeText.style.color = '#e74c3c';
     } else if (currentHP <= 50) {
         battleMessegeText.textContent = '相手はふらふらだ！あと少し！';
+        battleMessegeText.style.color = '#e67e22';
     } else {
         battleMessegeText.textContent = '効果的なダメージを与えた！';
+        battleMessegeText.style.color = '#333333';
     }
 })
 
@@ -35,4 +39,5 @@ resetBtn.addEventListener('click', () => {
     EnemyImg.setAttribute('alt', `元気なモンスター`);
     battleMessegeText.textContent = '「こうげき」ボタンを押してダメージを与えよう！';
     attackBtn.removeAttribute('disabled');
+    battleMessegeText.style.color = '#333333';
 })
