@@ -58,7 +58,41 @@ togglePasswordBtn.addEventListener('click', () => {
 });
 
 const commentInput = document.getElementById('comment-input');
+const charCount = document.getElementById('char-count');
+const warningText = document.getElementById('warning-text');
+// const postBtn = document.ElementById('post-btn');
+const MAX_LENGTH = 15;
+
+postBtn.setAttribute('disabled', 'true');
 
 commentInput.addEventListener('input', () => {
-    console.log(`現在の入力文字数: ${commentInput.value.length}文字`);
+    let value = commentInput.value.length;
+
+    console.log(`現在の入力文字数: ${value}文字`);
+    charCount.textContent = value;
+
+    if (value === 0) {
+        postBtn.setAttribute('disabled', 'true');
+        warningText.textContent = '';
+        commentInput.classList.remove('is-error');
+        warningText.classList.remove('is-error');
+    } else if (value > MAX_LENGTH) {
+        postBtn.setAttribute('disabled', 'true');
+        warningText.textContent = '文字数オーバーです';
+        commentInput.classList.add('is-error');
+        warningText.classList.add('is-error');
+    } else {
+        postBtn.removeAttribute('disabled');
+        warningText.textContent = '';
+        commentInput.classList.remove('is-error');
+        warningText.classList.remove('is-error');
+    }
+});
+
+// （おまけ）投稿ボタンが押されたときの処理
+postBtn.addEventListener('click', () => {
+    alert(`「${commentInput.value}」を投稿しました！`);
+    commentInput.value = ''; // 入力欄をクリア
+    charCount.textContent = '0';
+    postBtn.setAttribute('disabled', 'true');
 });
