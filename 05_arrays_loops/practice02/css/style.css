@@ -3,7 +3,7 @@
 body {
     padding: 24px;
     font-family: sans-serif;
-    max-width: 600px;
+    max-width: 680px;
 }
 
 section {
@@ -11,15 +11,21 @@ section {
     border-top: 1px solid #ccc;
 }
 
-#step-indicator {
+.color-preview {
+    height: 80px;
+    background: #eee;
+    display: grid;
+    place-items: center;
     font-weight: bold;
-    color: #0066cc;
+    border-radius: 8px;
+    margin-bottom: 12px;
 }
 
-#step-message {
-    padding: 16px;
-    background-color: #f0f7ff;
-    border-radius: 4px;
+.btn-group,
+.tab-buttons {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
 }
 
 button {
@@ -27,13 +33,19 @@ button {
     cursor: pointer;
 }
 
-.add-step-form {
-    margin-top: 20px;
-    display: flex;
-    gap: 8px;
+button.is-active {
+    background: #333;
+    color: #fff;
 }
 
-input {
-    padding: 8px;
-    flex: 1;
+.tab-panel {
+    display: none;
+    margin-top: 12px;
+    padding: 16px;
+    background: #f4f6f8;
+    border-radius: 8px;
+}
+
+.tab-panel.is-active {
+    display: block;
 }

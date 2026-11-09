@@ -13,3 +13,11 @@ arr.shift() 先頭を一つ削除
 arr.pop() 末尾を一つ削除
 arr.splice(start, count) 指定位置から削除・置換
 */
+
+let calendar = '';
+calendar += '<table>';
+for(let i = 1; i <= 31; i++){
+    calendar += `<td>${i}日</td>`;
+}
+calendar += '<table>';
+menuList.innerHTML = calendar;
