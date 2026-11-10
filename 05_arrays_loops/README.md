@@ -14,6 +14,8 @@ arr.pop() 末尾を一つ削除
 arr.splice(start, count) 指定位置から削除・置換
 */
 
+for文の最初のlet忘れずに！
+
 let calendar = '';
 calendar += '<table>';
 for(let i = 1; i <= 31; i++){
@@ -21,3 +23,9 @@ for(let i = 1; i <= 31; i++){
 }
 calendar += '<table>';
 menuList.innerHTML = calendar;
+---
+NodeList 配列のような形
+複数要素を取得できる↓
+getElementsByClassName()
+getElementByTagnName()
+これらをまとめてquerySelectorAll()で取得できる
